@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    username: caloriecounter
+    url: jdbc:h2:mem:userdb
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: admin
+      password: admin
+    realmImportFile: caloriecounter-realm.json
